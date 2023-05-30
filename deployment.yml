@@ -11,12 +11,12 @@ spec:
   selector:
     matchLabels:
       app: capfinal
-   strategy:
+    strategy:
      rollingUpdate:
        maxSurge: 25%
        maxUnavailable: 25%
      type: RollingUpdate
-   template:
+    template:
      metadata:
        labels:
          app: capfinal
